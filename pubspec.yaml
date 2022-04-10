@@ -90,7 +90,7 @@ flutter:
 
   #declarar los assets
   assets:
-    - C:\Users\Adolfo Jara\OneDrive - Universidad Politecnica Salesiana\Cursos platzi\Flutter\app\fonts\assets\images\foto.jpg
+    - assets/images/
 
 
   #declaracion de la fuente que se va a usar:
