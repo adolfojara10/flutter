@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, unnecessary_new
 
 import 'package:flutter/material.dart';
+import 'button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
   String namePlace;
@@ -12,17 +13,15 @@ class DescriptionPlace extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final star_half = Container(
-      margin: EdgeInsets.only(top: 322.0, right: 3.0, left: 3.0),
-      child: Icon(Icons.star_half, color: Colors.yellow)
-    );
+        margin: EdgeInsets.only(top: 350.0, right: 3.0, left: 3.0),
+        child: Icon(Icons.star_half, color: Colors.yellow));
 
     final star_border = Container(
-      margin: EdgeInsets.only(top: 322.0, right: 3.0, left: 3.0),
-      child: Icon(Icons.star_border, color: Colors.black)
-    );
+        margin: EdgeInsets.only(top: 350.0, right: 3.0, left: 3.0),
+        child: Icon(Icons.star_border, color: Colors.black));
 
     final star = Container(
-      margin: EdgeInsets.only(top: 322.0, right: 3.0, left: 3.0),
+      margin: EdgeInsets.only(top: 350.0, right: 3.0, left: 3.0),
       child: Icon(Icons.star, color: Colors.yellow),
     );
 
@@ -31,7 +30,7 @@ class DescriptionPlace extends StatelessWidget {
       child: new Text(
         descriptionPlace,
         style: const TextStyle(
-            fontFamily:"Lato",
+            fontFamily: "Lato",
             fontSize: 16.0,
             fontWeight: FontWeight.bold,
             color: Color(0xFF56575a)),
@@ -41,13 +40,16 @@ class DescriptionPlace extends StatelessWidget {
       children: <Widget>[
         Container(
             // ignore: prefer_const_constructors
-            margin: EdgeInsets.only(top: 320.0, left: 20.0, right: 20.0),
+            margin: EdgeInsets.only(top: 348.0, left: 20.0, right: 20.0),
 
             // ignore: prefer_const_constructors
             child: Text(
               namePlace,
               // ignore: prefer_const_constructors
-              style: TextStyle(fontFamily:"Lato",fontSize: 30.0, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontFamily: "Lato",
+                  fontSize: 30.0,
+                  fontWeight: FontWeight.bold),
 
               textAlign: TextAlign.left,
             )),
@@ -55,6 +57,8 @@ class DescriptionPlace extends StatelessWidget {
       ],
     );
 
-    return Column(children: <Widget>[title_stars, description]);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[title_stars, description, ButtonPurple("Navigate")]);
   }
 }

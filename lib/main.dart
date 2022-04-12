@@ -4,7 +4,7 @@ import 'package:app/description_place.dart';
 import 'package:app/review.dart';
 import 'package:flutter/services.dart';
 import 'review_list.dart';
-import 'gradient_back.dart';
+import 'header_app_bar.dart';
 
 import 'package:flutter/material.dart';
 
@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
               title: const Text("Hola mundo"),
               backgroundColor: Colors.pink,
               foregroundColor: Colors.black,
-            ),*/
+            )*/
             /*body: SingleChildScrollView(
                 scrollDirection: Axis.vertical,
                                 
@@ -63,10 +63,8 @@ class MyApp extends StatelessWidget {
 
                     ReviewList()
                   ]
-                ),
-                GradientBack("Popular"),
-                
-
+                ),            
+                HeaderAppBar()
               ]
             ))
         //home: const MyHomePage(title: 'Flutter Demo Home Page'),
